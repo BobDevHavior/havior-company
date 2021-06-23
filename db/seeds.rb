@@ -64,9 +64,11 @@ end
 
 puts "User done!"
 
-DataBase.create(
-    url: nil, 
-    port: nil, 
-    user: nil, 
-    name: nil, 
-    db_password: nil)
+DataBase.create!(
+    url: "https://www.havior.co", 
+    port: "5432", 
+    user: "admin", 
+    name: "havior_data_base", 
+    db_password: "password")
+
+puts "Data base done!"
