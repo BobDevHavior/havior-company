@@ -4,7 +4,7 @@ class CreateDataBases < ActiveRecord::Migration[6.1]
       t.string :url
       t.string :port
       t.string :user
-      t.string :password
+      t.string :db_password
       t.string :name
 
       t.timestamps

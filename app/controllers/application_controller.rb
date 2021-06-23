@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
     user_data = [
       :nick_name,
       :admin,
-      :super_admin,
       :senior,
       :first_name,
       :last_name

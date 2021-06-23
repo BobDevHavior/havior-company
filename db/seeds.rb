@@ -54,8 +54,7 @@ HOBBIES = [
         password: PASSWORDS[i],
         pwd: PASSWORDS[i],
         hacked: false,
-        super_admin: false,
-        admin: true,
+        admin: false,
         position: i + 1,
         employee: true,
         senior: rand(0..1).zero?
@@ -65,3 +64,9 @@ end
 
 puts "User done!"
 
+DataBase.create(
+    url: nil, 
+    port: nil, 
+    user: nil, 
+    name: nil, 
+    db_password: nil)
