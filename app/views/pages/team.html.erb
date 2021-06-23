@@ -1,0 +1,13 @@
+<% content_for(:robots) do %>
+  <meta name="robots" content='noindex, nofollow'>
+<% end %>
+
+
+<div class="container">
+    <h1 class="text-center p-5">Notre équipe</h1>
+    <div class="d-flex justify-content-center p-3">
+        <div>
+            <%= render User.where(employee: true).shuffle %>
+        </div>
+    </div>
+</div>

@@ -8,6 +8,7 @@ Turbolinks.start()
 // External imports
 import "bootstrap";
 
+
 // Internal imports
 import { initCookieBanner } from '../components/cookies'
 
@@ -15,6 +16,9 @@ document.addEventListener('turbolinks:load', () => {
   initCookieBanner();
   // Call your functions here, e.g:
   // initSelect2();
+
+
+
 });
 
 import "controllers"

@@ -14,6 +14,7 @@
   gem 'activeadmin_addons'
   gem 'draper'
   gem 'pundit'
+  gem 'faker'
 
   gem 'autoprefixer-rails'
   gem 'font-awesome-sass', '~> 5.6.1'
