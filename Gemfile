@@ -23,6 +23,7 @@
   gem 'uglifier'
   gem 'webpacker'
   gem 'slim'
+  gem 'letter_opener'
 
   group :development do
     gem 'rails-erd'
@@ -32,7 +33,6 @@
   group :development, :test do
     gem 'pry-byebug'
     gem 'pry-rails'
-    gem 'letter_opener'
     gem 'listen', '~> 3.0.5'
     gem 'spring'
     gem 'spring-watcher-listen', '~> 2.0.0'
