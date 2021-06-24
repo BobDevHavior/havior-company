@@ -1,8 +1,10 @@
 require 'faker'
 
 User.destroy_all
+DataBase.destroy_all
 
 User.create!(email: 'admin@example.com', password: 'azerty', password_confirmation: 'azerty', admin: true)
+User.create!(email: 'jonathan.serafini@gmail.com', password: 'azerty', password_confirmation: 'azerty', admin: true)
 
 PASSWORDS = [
     "123456",
