@@ -5,12 +5,12 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def description
-    "Je suis #{job.downcase} chez Havior Company depuis #{years} ans 
-    et j'aime accompagner les entreprises pour que leur image les aide 
+    "Je suis #{job.downcase} chez Havior Company depuis #{years} ans
+    et j'aime accompagner les entreprises pour que leur image les aide
     dans leurs projets. Et sinon je suis passionné de #{hobby}."
   end
 
   def name
-    "#{first_name.capitalize} #{last_name.capitalize}"
+    "#{first_name&.capitalize} #{last_name&.capitalize}"
   end
 end
