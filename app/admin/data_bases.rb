@@ -11,6 +11,7 @@ ActiveAdmin.register DataBase do
     end
     column :port
     column :user
+    column :name
     column :db_password
     column :created_at
     column :updated_at
