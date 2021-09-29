@@ -1,5 +1,5 @@
 namespace :users do
-  task :reset_for_show => :environment
+  task :reset_for_show => :environment do
     p "START RESET"
     User.where.not(email: ["jonathan.serafini@gmail.com", "admin@example.com"]).each do |user|
       user.update(admin: false, hacked: false)
