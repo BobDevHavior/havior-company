@@ -6,20 +6,20 @@ DataBase.destroy_all
 User.create!(email: 'admin@example.com', password: 'azerty', password_confirmation: 'azerty', admin: true)
 User.create!(email: 'jonathan.serafini@gmail.com', password: 'azerty', password_confirmation: 'azerty', admin: true)
 
-PASSWORDS = [
-    "123456",
-    "123456789",
-    "azerty",
-    "qwerty",
-    "1234561",
-    "loulou",
-    "doudou",
-    "marseille",
-    "azertyuiop",
-    "12345678",
-    "password",
-    "soleil"
-]
+# PASSWORDS = [
+#     "123456",
+#     "123456789",
+#     "azerty",
+#     "qwerty",
+#     "1234561",
+#     "loulou",
+#     "doudou",
+#     "marseille",
+#     "azertyuiop",
+#     "12345678",
+#     "password",
+#     "soleil"
+# ]
 
 JOBS = [
     "Commercial",
@@ -53,8 +53,8 @@ HOBBIES = [
         job: JOBS.sample,
         hobby: HOBBIES.sample,
         years: rand(2..20),
-        password: PASSWORDS[i],
-        pwd: PASSWORDS[i],
+        password: "qwerty",
+        pwd: "qwerty",
         hacked: false,
         admin: false,
         position: i + 1,
